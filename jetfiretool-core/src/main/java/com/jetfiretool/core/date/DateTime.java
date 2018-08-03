@@ -1,5 +1,12 @@
 package com.jetfiretool.core.date;
 
+import com.jetfiretool.core.date.format.DateParser;
+import com.jetfiretool.core.date.format.DatePrinter;
+import com.jetfiretool.core.date.format.FastDateFormat;
+import com.jetfiretool.core.lang.Assert;
+import com.jetfiretool.core.util.ObjectUtil;
+import com.jetfiretool.core.util.StrUtil;
+
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -7,13 +14,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
-
-import com.jetfiretool.core.date.format.DateParser;
-import com.jetfiretool.core.date.format.DatePrinter;
-import com.jetfiretool.core.date.format.FastDateFormat;
-import com.jetfiretool.core.lang.Assert;
-import com.jetfiretool.core.util.ObjectUtil;
-import com.jetfiretool.core.util.StrUtil;
 
 /**
  * 包装java.util.Date
@@ -775,7 +775,7 @@ public class DateTime extends Date {
 	 * 转为"HH:mm:ss" 格式字符串
 	 * 
 	 * @return "HH:mm:ss" 格式字符串
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public String toTimeStr() {
 		if(null != this.timeZone) {

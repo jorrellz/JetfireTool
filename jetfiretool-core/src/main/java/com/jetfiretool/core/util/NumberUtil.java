@@ -2112,7 +2112,7 @@ public class NumberUtil {
 	 * 
 	 * @param number 数字，支持0x开头、0开头和普通十进制
 	 * @return int
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static int parseInt(String number) {
 		if(StrUtil.isBlank(number)) {
@@ -2139,7 +2139,7 @@ public class NumberUtil {
 	 * 
 	 * @param number 数字，支持0x开头、0开头和普通十进制
 	 * @return long
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static long parseLong(String number) {
 		if(StrUtil.isBlank(number)) {

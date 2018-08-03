@@ -5,7 +5,7 @@ package com.jetfiretool.core.thread.threadlocal;
  *
  * @param <T> 值类型
  * @author Jetfire
- * @since 4.1.4
+ * @since 1.0.0
  */
 public class NamedInheritableThreadLocal<T> extends InheritableThreadLocal<T> {
 

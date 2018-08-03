@@ -27,7 +27,7 @@ public class PropsTest {
 		Props props = new Props("test.properties");
 		String user = props.getProperty("user");
 		Assert.assertEquals(user, "root");
-		
+		System.out.println("test.propreties:"+user);
 		String driver = props.getStr("driver");
 		Assert.assertEquals(driver, "com.mysql.jdbc.Driver");
 	}

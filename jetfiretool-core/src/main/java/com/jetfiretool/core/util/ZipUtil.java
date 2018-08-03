@@ -507,7 +507,7 @@ public class ZipUtil {
 	 * @param charset 编码
 	 * @param level 压缩级别，1~9
 	 * @return 压缩后的字节流
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static byte[] zlib(String content, String charset, int level) {
 		return zlib(StrUtil.bytes(content, charset), level);
@@ -519,7 +519,7 @@ public class ZipUtil {
 	 * @param file 被压缩的文件
 	 * @param level 压缩级别
 	 * @return 压缩后的字节流
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static byte[] zlib(File file, int level) {
 		final ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -539,7 +539,7 @@ public class ZipUtil {
 	 * @param buf 数据
 	 * @param level 压缩级别，0~9
 	 * @return 压缩后的bytes
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static byte[] zlib(byte[] buf, int level) {
 		final ByteArrayInputStream in = new ByteArrayInputStream(buf);
@@ -554,7 +554,7 @@ public class ZipUtil {
 	 * @param buf 压缩过的字节流
 	 * @param charset 编码
 	 * @return 解压后的字符串
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static String unZlib(byte[] buf, String charset) {
 		return StrUtil.str(unZlib(buf), charset);
@@ -565,7 +565,7 @@ public class ZipUtil {
 	 * 
 	 * @param buf 数据
 	 * @return 解压后的bytes
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static byte[] unZlib(byte[] buf) {
 		final ByteArrayInputStream in = new ByteArrayInputStream(buf);

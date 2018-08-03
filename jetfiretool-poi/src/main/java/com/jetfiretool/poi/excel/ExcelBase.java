@@ -19,7 +19,7 @@ import com.jetfiretool.core.lang.Assert;
  * 
  * @param <T> 子类类型，用于返回this
  * @author Jetfire
- * @since 4.1.4
+ * @since 1.0.0
  */
 public class ExcelBase<T extends ExcelBase<T>> implements Closeable {
 	/** 是否被关闭 */
@@ -178,7 +178,7 @@ public class ExcelBase<T extends ExcelBase<T>> implements Closeable {
 	 * 
 	 * @param y Y坐标，从0计数，既行号
 	 * @return {@link Row}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public Row getOrCreateRow(int y) {
 		return RowUtil.getOrCreateRow(this.sheet, y);
@@ -190,7 +190,7 @@ public class ExcelBase<T extends ExcelBase<T>> implements Closeable {
 	 * @param x X坐标，从0计数，既列号
 	 * @param y Y坐标，从0计数，既行号
 	 * @return {@link CellStyle}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public CellStyle getOrCreateCellStyle(int x, int y) {
 		final Cell cell = getOrCreateCell(x, y);
@@ -207,7 +207,7 @@ public class ExcelBase<T extends ExcelBase<T>> implements Closeable {
 	 * 
 	 * @param y Y坐标，从0计数，既行号
 	 * @return {@link CellStyle}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public CellStyle getOrCreateRowStyle(int y) {
 		final Row row = getOrCreateRow(y);
@@ -224,7 +224,7 @@ public class ExcelBase<T extends ExcelBase<T>> implements Closeable {
 	 * 
 	 * @param x X坐标，从0计数，既列号
 	 * @return {@link CellStyle}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public CellStyle getOrCreateColumnStyle(int x) {
 		CellStyle columnStyle = this.sheet.getColumnStyle(x);

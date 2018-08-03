@@ -293,7 +293,7 @@ public class FileUtil {
 	 * 
 	 * @param path 文件路径
 	 * @return File
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static File newFile(String path) {
 		return new File(path);
@@ -1025,7 +1025,7 @@ public class FileUtil {
 	 * 
 	 * @param file 文件
 	 * @return 规范绝对路径，如果传入file为null，返回null
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static String getCanonicalPath(File file) {
 		if(null == file) {

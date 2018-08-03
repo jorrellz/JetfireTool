@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<packaging>pom</packaging>
@@ -10,6 +10,7 @@
 	<version>1.0.0</version>
 	<name>jetfiretool</name>
 	<description>Java基础工具类集合</description>
+	<url>https://github.com/jorrellz/JetfireTool</url>
 
 	<modules>
 		<module>jetfiretool-all</module>
@@ -60,6 +61,11 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<issueManagement>
+		<system>Github Issue</system>
+		<url>https://github.com/jorrellz/JetfireTool/issues</url>
+	</issueManagement>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -67,6 +73,18 @@
 		</license>
 	</licenses>
 
+	<developers>
+		<developer>
+			<name>jorrellz</name>
+			<email>jorrell@qq.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git@github.com:jorrellz/JetfireTool.git</connection>
+		<developerConnection>scm:git@github.com:jorrellz/JetfireTool.git</developerConnection>
+		<url>git@github.com:jorrellz/JetfireTool.git</url>
+	</scm>
 
 	<build>
 		<plugins>
@@ -92,14 +110,16 @@
 
 	<profiles>
 		<profile>
-			<id>release</id>
+			<id>releases</id>
 			<distributionManagement>
 				<snapshotRepository>
-					<id>oss</id>
+					<id>releases</id>
+					<layout>default</layout>
 					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 				</snapshotRepository>
 				<repository>
-					<id>oss</id>
+					<id>releases</id>
+					<layout>default</layout>
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>

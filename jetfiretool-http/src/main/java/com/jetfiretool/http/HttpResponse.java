@@ -122,7 +122,7 @@ public class HttpResponse extends HttpBase<HttpResponse> implements Closeable{
 	 * 
 	 * @param name Cookie名
 	 * @return {@link HttpCookie}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public HttpCookie getCookie(String name) {
 		List<HttpCookie> cookie = getCookies();
@@ -141,7 +141,7 @@ public class HttpResponse extends HttpBase<HttpResponse> implements Closeable{
 	 * 
 	 * @param name Cookie名
 	 * @return Cookie值
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public String getCookieValue(String name) {
 		HttpCookie cookie = getCookie(name);

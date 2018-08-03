@@ -88,7 +88,7 @@ public class SqlExecutor {
 	 * @param params 参数
 	 * @return ResultSet
 	 * @throws SQLException SQL执行异常
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static ResultSet callQuery(Connection conn, String sql, Object... params) throws SQLException {
 		CallableStatement proc = null;

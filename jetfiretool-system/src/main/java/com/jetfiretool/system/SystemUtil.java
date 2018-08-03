@@ -208,7 +208,7 @@ public class SystemUtil {
 	 * 返回Java虚拟机类加载系统相关属性
 	 *
 	 * @return {@link ClassLoadingMXBean}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static ClassLoadingMXBean getClassLoadingMXBean() {
 		return ManagementFactory.getClassLoadingMXBean();
@@ -218,7 +218,7 @@ public class SystemUtil {
 	 * 返回Java虚拟机内存系统相关属性
 	 *
 	 * @return {@link MemoryMXBean}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static MemoryMXBean getMemoryMXBean() {
 		return ManagementFactory.getMemoryMXBean();
@@ -228,7 +228,7 @@ public class SystemUtil {
 	 * 返回Java虚拟机线程系统相关属性
 	 *
 	 * @return {@link ThreadMXBean}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static ThreadMXBean getThreadMXBean() {
 		return ManagementFactory.getThreadMXBean();
@@ -238,7 +238,7 @@ public class SystemUtil {
 	 * 返回Java虚拟机运行时系统相关属性
 	 *
 	 * @return {@link RuntimeMXBean}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static RuntimeMXBean getRuntimeMXBean() {
 		return ManagementFactory.getRuntimeMXBean();
@@ -249,7 +249,7 @@ public class SystemUtil {
 	 * 如果没有编译系统，则返回<code>null</code>
 	 *
 	 * @return a {@link CompilationMXBean} ，如果没有编译系统，则返回<code>null</code>
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static CompilationMXBean getCompilationMXBean() {
 		return ManagementFactory.getCompilationMXBean();
@@ -259,7 +259,7 @@ public class SystemUtil {
 	 * 返回Java虚拟机运行下的操作系统相关信息属性
 	 *
 	 * @return {@link OperatingSystemMXBean}
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static OperatingSystemMXBean getOperatingSystemMXBean() {
 		return ManagementFactory.getOperatingSystemMXBean();

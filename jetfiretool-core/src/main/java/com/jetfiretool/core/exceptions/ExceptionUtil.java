@@ -107,7 +107,7 @@ public final class ExceptionUtil {
 	 * 获取指定层的堆栈信息
 	 * 
 	 * @return 指定层的堆栈信息
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static StackTraceElement getStackElement(int i) {
 		return getStackElements()[i];
@@ -117,7 +117,7 @@ public final class ExceptionUtil {
 	 * 获取入口堆栈信息
 	 * 
 	 * @return 入口堆栈信息
-	 * @since 4.1.4
+	 * @since 1.0.0
 	 */
 	public static StackTraceElement getRootStackElement() {
 		final StackTraceElement[] stackElements = getStackElements();
