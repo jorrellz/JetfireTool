@@ -36,7 +36,7 @@ JetfireTool是整合Java基础工具类的集合，可快速实现体力活的�
 
 ```xml
 <dependency>
-    <groupId>com.jetfiretool</groupId>
+    <groupId>com.github.jetfiretool</groupId>
     <artifactId>jetfiretool-all</artifactId>
     <version>1.0.0</version>
 </dependency>

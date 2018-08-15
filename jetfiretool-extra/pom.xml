@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 
 	<parent>
-		<groupId>com.jetfiretool</groupId>
+		<groupId>com.github.jetfiretool</groupId>
 		<artifactId>jetfiretool-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
@@ -29,12 +29,12 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.jetfiretool</groupId>
+			<groupId>com.github.jetfiretool</groupId>
 			<artifactId>jetfiretool-core</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.jetfiretool</groupId>
+			<groupId>com.github.jetfiretool</groupId>
 			<artifactId>jetfiretool-setting</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>

@@ -5,7 +5,7 @@
 
 	<packaging>pom</packaging>
 
-	<groupId>com.jetfiretool</groupId>
+	<groupId>com.github.jetfiretool</groupId>
 	<artifactId>jetfiretool-parent</artifactId>
 	<version>1.0.0</version>
 	<name>jetfiretool</name>
@@ -110,6 +110,10 @@
 
 	<profiles>
 		<profile>
+			<!--<activation>-->
+				<!--&lt;!&ndash; 设置默认激活这个配置 &ndash;&gt;-->
+				<!--<activeByDefault>true</activeByDefault>-->
+			<!--</activation>-->
 			<id>releases</id>
 			<distributionManagement>
 				<snapshotRepository>

@@ -1,18 +1,17 @@
 package com.jetfiretool.json;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
+import com.jetfiretool.core.collection.CollectionUtil;
+import com.jetfiretool.core.date.DateUtil;
+import com.jetfiretool.core.map.MapUtil;
 import com.jetfiretool.json.test.bean.Price;
 import com.jetfiretool.json.test.bean.UserA;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.jetfiretool.core.collection.CollectionUtil;
-import com.jetfiretool.core.date.DateUtil;
-import com.jetfiretool.core.map.MapUtil;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JSONUtilTest {
 
@@ -53,7 +52,7 @@ public class JSONUtilTest {
 		data.put("model", model);
 
 		JSONObject jsonObject = JSONUtil.parseObj(data);
-		Assert.assertEquals("{\"model\":{\"type\":1,\"mobile\":\"17610836523\"}}", jsonObject.toString());
+		Assert.assertEquals("{\"model\":{\"mobile\":\"17610836523\",\"type\":1}}", jsonObject.toString());
 	}
 
 	@Test

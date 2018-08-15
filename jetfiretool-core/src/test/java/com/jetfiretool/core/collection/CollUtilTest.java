@@ -1,24 +1,15 @@
 package com.jetfiretool.core.collection;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import com.jetfiretool.core.lang.Dict;
-import org.junit.Assert;
-import org.junit.Test;
-
 import com.jetfiretool.core.collection.CollUtil.Hash;
 import com.jetfiretool.core.date.DateUtil;
+import com.jetfiretool.core.lang.Dict;
 import com.jetfiretool.core.lang.Editor;
 import com.jetfiretool.core.lang.Matcher;
 import com.jetfiretool.core.map.MapUtil;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.*;
 
 /**
  * 集合工具类单元测试
@@ -317,7 +308,7 @@ public class CollUtilTest {
 		
 		List<String> list1 = CollUtil.list(false, set);
 		List<String> list2 = CollUtil.list(true, set);
-		Assert.assertEquals("[b, c, a]", list1.toString());
-		Assert.assertEquals("[b, c, a]", list2.toString());
+		Assert.assertEquals("[a, b, c]", list1.toString());
+		Assert.assertEquals("[a, b, c]", list2.toString());
 	}
 }

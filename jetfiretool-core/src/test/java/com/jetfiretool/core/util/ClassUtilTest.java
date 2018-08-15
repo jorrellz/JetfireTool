@@ -1,12 +1,11 @@
 package com.jetfiretool.core.util;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
+import com.jetfiretool.core.lang.Console;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.jetfiretool.core.lang.Console;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * {@link ClassUtil} 单元测试
@@ -25,7 +24,7 @@ public class ClassUtilTest {
 	@Test
 	public void getClassNameTest() {
 		String className = ClassUtil.getClassName(ClassUtil.class, false);
-		Assert.assertEquals("ClassUtil", className);
+		Assert.assertEquals("com.jetfiretool.core.util.ClassUtil", className);
 
 		String simpleClassName = ClassUtil.getClassName(ClassUtil.class, true);
 		Assert.assertEquals("ClassUtil", simpleClassName);

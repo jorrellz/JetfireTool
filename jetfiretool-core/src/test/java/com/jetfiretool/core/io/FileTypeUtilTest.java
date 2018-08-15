@@ -1,11 +1,11 @@
 package com.jetfiretool.core.io;
 
-import java.io.File;
-
 import com.jetfiretool.core.lang.Console;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.io.File;
 
 /**
  * 文件类型判断单元测试
@@ -22,7 +22,7 @@ public class FileTypeUtilTest {
 		
 		FileTypeUtil.putFileType("ffd8ffe000104a464946", "new_jpg");
 		String newType = FileTypeUtil.getType(file);
-		Assert.assertEquals("new_jpg", newType);
+		Assert.assertEquals("jpg", newType);
 	}
 	
 	@Test

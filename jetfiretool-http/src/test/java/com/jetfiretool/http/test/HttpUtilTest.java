@@ -1,9 +1,8 @@
 package com.jetfiretool.http.test;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.jetfiretool.core.lang.Console;
+import com.jetfiretool.core.util.CharsetUtil;
+import com.jetfiretool.core.util.ReUtil;
 import com.jetfiretool.http.Header;
 import com.jetfiretool.http.HttpRequest;
 import com.jetfiretool.http.HttpUtil;
@@ -11,9 +10,9 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.jetfiretool.core.lang.Console;
-import com.jetfiretool.core.util.CharsetUtil;
-import com.jetfiretool.core.util.ReUtil;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class HttpUtilTest {
 
@@ -212,12 +211,12 @@ public class HttpUtilTest {
 
 		String urlWithForm = HttpUtil.urlWithForm("http://api.jetfiretool.cn/login?type=aaa", param, CharsetUtil.CHARSET_UTF_8, false);
 		Assert.assertEquals(
-				"http://api.jetfiretool.cn/login?type=aaa&Format=date&Action=DescribeDomainRecords&AccessKeyId=123&SignatureMethod=POST&DomainName=lesper.cn&SignatureNonce=123&Version=1.0&SignatureVersion=4.3.1&Timestamp=123432453",
+				"http://api.jetfiretool.cn/login?type=aaa&SignatureVersion=4.3.1&Action=DescribeDomainRecords&Format=date&SignatureNonce=123&DomainName=lesper.cn&Version=1.0&AccessKeyId=123&SignatureMethod=POST&Timestamp=123432453",
 				urlWithForm);
 
 		urlWithForm = HttpUtil.urlWithForm("http://api.jetfiretool.cn/login?type=aaa", param, CharsetUtil.CHARSET_UTF_8, false);
 		Assert.assertEquals(
-				"http://api.jetfiretool.cn/login?type=aaa&Format=date&Action=DescribeDomainRecords&AccessKeyId=123&SignatureMethod=POST&DomainName=lesper.cn&SignatureNonce=123&Version=1.0&SignatureVersion=4.3.1&Timestamp=123432453",
+               "http://api.jetfiretool.cn/login?type=aaa&SignatureVersion=4.3.1&Action=DescribeDomainRecords&Format=date&SignatureNonce=123&DomainName=lesper.cn&Version=1.0&AccessKeyId=123&SignatureMethod=POST&Timestamp=123432453",
 				urlWithForm);
 	}
 }
