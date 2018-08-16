@@ -5,7 +5,7 @@
 
 	<packaging>pom</packaging>
 
-	<groupId>com.github.jetfiretool</groupId>
+	<groupId>com.github.jorrellz</groupId>
 	<artifactId>jetfiretool-parent</artifactId>
 	<version>1.0.0</version>
 	<name>jetfiretool</name>
